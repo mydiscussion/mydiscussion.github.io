@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Metode</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <a href="index.html#menu"><img src="assets/back.png"></a>
+            </div>
+        </header>
+    <div class="tips">
+        <div class="container">
+            <div class="row">
+                <div class="more-tips" id="metode1">
+                        <p data-aos="zoom-in"
+                        data-aos-duration="700">Metode Diskusi</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="project-result"> 
+                <div class="detail-mobile">
+                    <h1 data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1000">Berkontribusi ke Diskusi</h1>
+                    <p data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1500">
+                        Lakukan persiapan yang matang.
+                        Sebaiknya Anda membaca dan mempelajari materi yang telah
+                        dibagikan sebelum mengikuti diskusi kelompok. Apabila Anda
+                        memiliki ide untuk topik yang akan dibahas di diskusi kelompok,
+                        luangkan waktu yang cukup untuk mempelajari topik tersebut.
+                    </p>
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2000" class="btn-mobile">
+                        <a href="metode1.html" class="btn-mobile">Read More</a>
+                    </div>
+                </div>
+                <div class="pict-mobile">
+                    <img data-aos="fade-left"
+                    data-aos-duration="1000" src="assets/metode1.png" width="300">
+                </div>
+            </div>
+            <div class="project-result" id="metode2"> 
+                <div class="detail-mobile">
+                    <h1 data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1000">Menciptakan Suasana Diskusi yang Nyaman</h1>
+                    <p data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1500">
+                        Fokuskan perhatian pada topik yang dibahas.
+                        Membicarakan hal lain yang tidak berhubungan dengan topik
+                        adalah hal yang menyenangkan dan bisa menjadi godaan tersendiri.
+                        Akan tetapi, sebaiknya Anda berusaha untuk tetap memfokuskan
+                        perhatian pada isu yang tengah dibahas.
+                    </p>
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2000" class="btn-mobile">
+                        <a href="metode2.html" class="btn-mobile">Read More</a>
+                    </div>
+                </div>
+                <div class="pict-mobile">
+                    <img data-aos="fade-left"
+                    data-aos-duration="1000" src="assets/metode2.png" width="300">
+                </div>
+            </div>
+            <div class="project-result" id="metode3"> 
+                <div class="detail-mobile">
+                    <h1 data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1000">Memimpin Diskusi Kelompok</h1>
+                    <p data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1500">
+                        Ajukan pertanyaan untuk memulai diskusi.
+                        Kelompok mungkin mengalami kesulitan untuk mulai membahas topik-topik
+                        tertentu. Anda bisa memulai diskusi dengan mengajukan pertanyaan terbuka
+                        untuk mengajak orang-orang membicarakan topik. Pertanyaan terbuka adalah
+                        pertanyaan yang mendorong orang-orang untuk memberikan penjelasan yang
+                        mendalam.
+                    </p>
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2000" class="btn-mobile">
+                        <a href="metode3.html" class="btn-mobile">Read More</a>
+                    </div>
+                </div>
+                <div class="pict-mobile">
+                    <img data-aos="fade-left"
+                    data-aos-duration="1000" src="assets/metode3.png" width="300">
+                </div>
+            </div>
+    <footer>
+        <div class="container">
+            <div class="socmed" >
+                <a href="">
+                    <img src="assets/github-logo.png" >
+                </a>
+                <a href="">
+                    <img src="assets/facebook-logo.png" >
+                </a>
+                <a href="">
+                    <img src="assets/instagram-logo.png" >
+                </a>
+                <a href="">
+                    <img src="assets/linkedin-logo.png" >
+                </a>
+                <a href="">
+                    <img src="assets/twitter-logo.png" >
+                <a href="">
+                    <img src="assets/youtube-logo.png" >
+                </a>
+            </div>
+            <p>©2022 All Right Reserved - By Team Eight SMK Negeri 2 Sumedang</p>
+        </div>
+    </footer>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
